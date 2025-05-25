@@ -1,0 +1,15 @@
+test_extract :
+python3 -m pytest etl_pipeline/tests/test_extract.py -v --cov --cov-report=term --cov-report=html
+
+test_load :
+python3 -m pytest etl_pipeline/tests/test_load.py -v --cov --cov-report=term --cov-report=html
+
+test_transform :
+python3 -m pytest etl_pipeline/tests/test_transform.py -v --cov --cov-report=term --cov-report=html
+
+or 
+
+python3 -m pytest etl_pipeline/tests/test_transform.py -v \
+  --cov=etl_pipeline.utils.transform \
+  --cov-report=term \
+  --cov-report=html

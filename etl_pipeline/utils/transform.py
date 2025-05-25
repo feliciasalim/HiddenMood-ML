@@ -18,7 +18,8 @@ def clean_text(text):
     text = re.sub(r'[^\w\s]', '', text)
     text = text.replace('\n', ' ')
     text = text.translate(str.maketrans('', '', string.punctuation))
-    text = text.strip(' ')
+    text = text.strip()
+    text = re.sub(r'\s+', ' ', text)
     return text
 
 def lowercase_text(text):
