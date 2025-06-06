@@ -1,10 +1,8 @@
 from pydantic import BaseModel
+from typing import List
 
-class RecInput(BaseModel):
+class TextInput(BaseModel):
     text: str
-    top_n: int = 2
 
-class RecOutput(BaseModel):
-    content: str
-    Link: str
-    Similarity: float
+class VideoRecommendationOutput(BaseModel):
+    recommendations: List[str] 
