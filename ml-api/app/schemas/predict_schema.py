@@ -4,5 +4,5 @@ class TextInput(BaseModel):
     text: str
 
 class StressEmotionPrediction(BaseModel):
-    predicted_stress: dict  # e.g., {"label": "High"}
-    predicted_emotion: dict  # e.g., {"label": "Depressed"}
+    predicted_stress: dict 
+    predicted_emotion: dict 
