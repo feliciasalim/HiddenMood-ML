@@ -115,19 +115,19 @@ Ensure you have Docker installed and your GCP project + Secret Manager are set u
     ```
     docker build -t gcr.io/[APP-ID]/ml-api .
     docker push gcr.io/[APP-ID]/ml-api
-    gcloud run deploy ml-api \
-      --image gcr.io/[APP-ID]/ml-api \
-      --region asia-southeast1 \
-      --service-account ml-api-service-account@[APP-ID].iam.gserviceaccount.com \
-      --memory 1Gi \
+    gcloud run deploy ml-api 
+      --image gcr.io/[APP-ID]/ml-api 
+      --region asia-southeast1 
+      --service-account ml-api-service-account@[APP-ID].iam.gserviceaccount.com 
+      --memory 1Gi 
       --allow-unauthenticated
     ```
 
 3. Testing
    
     ```
-    curl -X POST "https://your-cloud-run-url/predict/analyze" \
-      -H "Content-Type: application/json" \
+    curl -X POST "https://your-cloud-run-url/predict/analyze" 
+      -H "Content-Type: application/json" 
       -d '{"text": "I am feeling stressed"}'
     ```
 
