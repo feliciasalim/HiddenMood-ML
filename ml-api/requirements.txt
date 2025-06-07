@@ -9,3 +9,4 @@ pandas==2.2.3
 google-cloud-aiplatform==1.67.1
 python-dateutil==2.9.0.post0
 google-cloud-secret-manager==2.20.0
+nltk==3.8.1
