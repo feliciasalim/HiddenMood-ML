@@ -17,7 +17,7 @@ if st.button("Analyze"):
                 st.subheader("Predicted Stress & Emotion")
                 st.markdown(f"- **Stress Level:** {result['predicted_stress']['label']}")
                 st.markdown(f"- **Emotion:** {result['predicted_emotion']['label']}")
-                st.markdown(f"- **Stress Score:** {result['stress_level']}")
+                st.markdown(f"- **Stress Score:** {result['stress_level']['stress_level']}")
 
                 st.subheader("Explanation & Suggestion")
                 gemini_response = requests.post(f"{API_BASE_URL}/predict/analyze", json={
@@ -30,7 +30,7 @@ if st.button("Analyze"):
 
                 st.subheader("Recommended Videos")
                 vids = requests.post(f"{API_BASE_URL}/predict/analyze", json={"text": user_input})
-                for link in vids.json().get("recommended_videos", []):
+                for link in vids.json().get(["recommended_videos"]["recommendations"], []):
                     st.markdown(f"[Watch Video]({link})")
             else:
                 st.error("API Error: " + response.text)
