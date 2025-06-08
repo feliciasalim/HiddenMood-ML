@@ -2,7 +2,7 @@
 
 HiddenMood FastAPI is a mental health backend service designed to help individuals gain deeper insight into their emotional well-being through the power of machine learning and natural language processing. The primary objective of this system is to analyze user-submitted text to automatically classify both stress levels and emotions, offering users a data-driven reflection of their mental condition.
 
-This model works by using a Bidirectional Long Short-Term Memory (BiLSTM) model trained to detect two key mental health indicators: stress levels, which are categorized as Low, Medium, or High; and emotional states, like Anxious, Depressed, Lonely, Overwhelmed, and Panicked. This dual classification helps create a nuanced picture of a user’s mental status based on the linguistic patterns and expressions in their input.
+This API works by using a Bidirectional Long Short-Term Memory (BiLSTM) model trained to detect two key mental health indicators: stress levels, which are categorized as Low, Medium, or High; and emotional states, like Anxious, Depressed, Lonely, Overwhelmed, and Panicked. This model helps in generating a user’s mental health status based on the linguistic patterns and expressions in their input.
 
 Based on the detected emotions, there's a video recommender system which recommends relevant videos aimed at emotional regulation and relaxation, serving as immediate self-help resources. Furthermore, HiddenMood employs Google’s Vertex AI to deliver thoughtful, AI-generated feedback and coping strategies tailored to the user’s current mental state.
 
