@@ -71,7 +71,7 @@ To install this API, follow these steps:
   1. Clone repository
   
       ```
-      git clone https://github.com/your-username/HiddenMood-ML-API.git
+      git clone https://github.com/feliciasalim/HiddenMood-ML.git
       cd HiddenMood-ml-api
       ```
   
@@ -79,7 +79,7 @@ To install this API, follow these steps:
   
       ```
       python -m venv venv
-      source venv/bin/activate  # On Windows use: venv\Scripts\activate
+      source venv/bin/activate  # On Windows use: venv\Scripts\activate.ps1
       ```
   
   3. Install dependencies
@@ -106,7 +106,7 @@ Ensure you have Docker installed and your GCP project + Secret Manager are set u
 1. Clone repository
 
     ```
-    git clone https://github.com/your-username/HiddenMood-ML-API.git
+    git clone https://github.com/feliciasalim/HiddenMood-ML.git
     cd HiddenMood-ml-api
     ```
 
