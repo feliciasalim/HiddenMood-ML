@@ -6,8 +6,6 @@ This API works by using a Bidirectional Long Short-Term Memory (BiLSTM) model tr
 
 Based on the detected emotions, there's a video recommender system which recommends relevant videos aimed at emotional regulation and relaxation, serving as immediate self-help resources. Furthermore, HiddenMood employs Google’s Vertex AI to deliver thoughtful, AI-generated feedback and coping strategies tailored to the user’s current mental state.
 
----
-
 
 ## Table of Contents
 
@@ -18,8 +16,6 @@ Based on the detected emotions, there's a video recommender system which recomme
 * [Deployment via GCP](#deployment-via-gcp)
 * [License](#license)
 
----
-
 
 ## Features
 
@@ -27,8 +23,6 @@ Based on the detected emotions, there's a video recommender system which recomme
 * Stress level output as percentage (0–100%)
 * Emotion-based video recommendation system
 * Generative feedback and coping strategies using Vertex AI
-
----
 
 
 ## Dataset
@@ -52,16 +46,12 @@ To train the HiddenMood classification model, the mental health dataset was take
   * Author: Neel Ghoshal
   * Link: [https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data](https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data)
 
----
-
 
 ## Model Architecture
 
 * Sentiment Model: BiLSTM (Bidirectional LSTM)
 * Emotion-based Recommender: TF-IDF + Cosine Similarity (Content-Based Filtering)
 * Feedback System: Vertex AI 
-
----
 
 
 ## Installation (Local)
@@ -96,8 +86,6 @@ To install this API, follow these steps:
       
   5. Testing via [http://localhost:8000/docs](http://localhost:8000/docs)
 
----
-
 
 ## Deployment via GCP
 
@@ -130,8 +118,6 @@ Ensure you have Docker installed and your GCP project + Secret Manager are set u
       -H "Content-Type: application/json" 
       -d '{"text": "I am feeling stressed"}'
     ```
-
----
 
 
 ## License
