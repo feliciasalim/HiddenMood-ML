@@ -18,8 +18,8 @@ def analyze_with_vertex(stress_level, text, emotion):
     try:
         prompt = f"""
         Analyze this text and list the words contributing to the stress level generated,
-        explain it (in max 3 points only and make sure the explanation is adjusted with the stress level),
-        and give suggestions (only in paragraph (not longer than 30 words) & dont give useless/offensive suggestions, if there's like low/med
+        explain it (dont make in points but do explain why) make sure the explanation is adjusted with the stress level),
+        and give suggestions (only in paragraph and don't make any bold or italic or emoji (not longer than 30 words) & dont give useless/offensive suggestions, if there's like low/med
         stress you can advise some activities they can do, for high stress level or any text with
         suicidal thoughts suggest them to reach medical help):
         Stress Level: "{stress_level}"
