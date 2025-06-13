@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_BASE_URL = "https://ml-api-tr6c3pgfyq-as.a.run.app"
+API_BASE_URL = "https://ml-api-295116710961.asia-southeast1.run.app"
 
 st.title("Mental Health Text Analysis")
 user_input = st.text_area("How are you feeling today? Describe it as detailed as possible!", height=200)
